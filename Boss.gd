@@ -27,6 +27,7 @@ func dead():
 		$HealthBar.text = "Dead"
 		velocity = Vector2(0, 0)
 		$AnimatedSprite.play("dead")
+		$CollisionShape2D.disabled = true
 		$CollisionShape2D.scale.x = 0
 		$CollisionShape2D.scale.y = 0
 		var change_stage = CHANGESTAGE.instance()

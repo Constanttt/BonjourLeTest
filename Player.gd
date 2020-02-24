@@ -82,4 +82,5 @@ func _on_AnimatedSprite_animation_finished():
 
 
 func _on_Timer_timeout():
-	get_tree().change_scene("res://TitleScreen.tscn")
+	#get_tree().change_scene("res://TitleScreen.tscn")
+	get_tree().reload_current_scene()
